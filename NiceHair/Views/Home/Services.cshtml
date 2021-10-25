@@ -1,0 +1,8 @@
+﻿<h1>Ydelser</h1>
+
+<ul>
+    @foreach (var service in Model)
+    {
+        <li><a asp-area="" asp-controller="Home" asp-action="Service" asp-route-id="@service.ServiceId">@service.ServiceName</a></li>
+    }
+</ul>
